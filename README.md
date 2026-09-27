@@ -2,6 +2,8 @@
 A responsive online quiz website built with HTML, CSS, and JavaScript.
 
 ## How QuizMaster Works
+
+```mermaid
 flowchart TD
     A[Open QuizMaster] --> B[Welcome Screen]
     B -->|Start Quiz| C[Choose Category]
@@ -51,3 +53,4 @@ flowchart TD
     Y --> Z[Display Results]
 
     Z -->|Restart Quiz| C
+   
