@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 1. Welcome Screen -->
+        <div id="welcome-screen">
+            <h1>QuizMaster</h1>
+            <p class="subtitle">Test Your Knowledge</p>
+            <p class="description">Challenge yourself with our online quiz.</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- 2. Category Selection Screen (initially hidden) -->
+        <section id="category-screen" class="hidden">
+            <h2>Choose a Category</h2>
+            <p class="description">Select a category to begin your quiz.</p>
+
+            <div id="category-buttons">
+                <button class="category-btn" data-category="HTML">HTML</button>
+                <button class="category-btn" data-category="CSS">CSS</button>
+                <button class="category-btn" data-category="JavaScript">JavaScript</button>
+                <button class="category-btn" data-category="Science">Science</button>
+                <button class="category-btn" data-category="General Knowledge">General Knowledge</button>
+            </div>
+        </section>
+
+        <!-- 3. Difficulty Selection Screen (initially hidden) -->
+        <section id="difficulty-screen" class="hidden">
+            <h2>Choose Difficulty</h2>
+            <p class="description">Select how challenging you want your quiz to be.</p>
+
+            <div id="difficulty-buttons">
+                <button class="difficulty-btn" data-difficulty="Easy">Easy</button>
+                <button class="difficulty-btn" data-difficulty="Medium">Medium</button>
+                <button class="difficulty-btn" data-difficulty="Hard">Hard</button>
+            </div>
+
+            <button id="back-to-category-btn">Back to Categories</button>
+        </section>
+
+        <!-- 4. Empty State Screen for unavailable combinations (initially hidden) -->
+        <section id="empty-screen" class="hidden">
+            <h2>No Questions Available</h2>
+            <p class="description">No questions are available for this category and difficulty yet. Please choose another combination.</p>
+            <button id="back-to-difficulty-btn">Choose Another Difficulty</button>
+        </section>
+
+        <!-- 5. Quiz Screen (initially hidden) -->
+        <div id="quiz-screen" class="hidden">
+            <!-- Category & Difficulty Info Badges -->
+            <div class="quiz-info-bar">
+                <p id="category-display"></p>
+                <p id="difficulty-display"></p>
+            </div>
+
+            <!-- Quiz Header: Question Counter, Countdown Timer & Score -->
+            <div class="quiz-header">
+                <p id="question-counter">Question 1 of 1</p>
+                <p id="timer">Time: 30</p>
+                <p id="score-display">Score: 0</p>
+            </div>
+
+            <!-- Progress Bar Track and Indicator -->
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+
+            <!-- Question and Answer Buttons -->
+            <h2 id="question-text"></h2>
+            <div id="answer-buttons"></div>
+
+            <!-- Navigation Buttons (Previous & Next) -->
+            <div class="nav-buttons">
+                <button id="prev-btn" disabled>Previous Question</button>
+                <button id="next-btn" class="hidden">Next Question</button>
+            </div>
+        </div>
+
+        <!-- 6. Results Screen (initially hidden) -->
+        <section id="results-screen" class="hidden">
+            <h2>Quiz Complete!</h2>
+
+            <!-- High score celebratory message -->
+            <p id="high-score-message"></p>
+
+            <div class="results-summary">
+                <p>Final Score: <span id="final-score">0</span></p>
+                <p>Correct Answers: <span id="correct-answers">0</span></p>
+                <p>Incorrect Answers: <span id="incorrect-answers">0</span></p>
+                <p>Unanswered: <span id="unanswered-questions">0</span></p>
+                <p>Percentage: <span id="percentage">0%</span></p>
+                <p>Best Score: <span id="best-score">0%</span></p>
+            </div>
+
+            <button id="restart-btn">Restart Quiz</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
