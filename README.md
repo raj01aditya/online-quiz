@@ -5,7 +5,7 @@ A responsive online quiz website built with HTML, CSS, and JavaScript.
 
 ```mermaid
 flowchart TD
-    A[Open QuizMaster] --> B[Welcome Screen]
+    A[Open Quiz Master] --> B[Welcome Screen]
     B -->|Start Quiz| C[Choose Category]
 
     C --> D[Choose Difficulty]
