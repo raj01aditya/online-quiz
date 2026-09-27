@@ -1,7 +1,7 @@
 # online-quiz
 A responsive online quiz website built with HTML, CSS, and JavaScript.
 
-## How QuizMaster Works
+## How Quiz Master Works
 
 ```mermaid
 flowchart TD
