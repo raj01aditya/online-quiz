@@ -1,11 +1,11 @@
 # online-quiz
 A responsive online quiz website built with HTML, CSS, and JavaScript.
 
-## How Quiz Master Works
+## How QuizMaster Works
 
 ```mermaid
 flowchart TD
-    A[Open Quiz Master] --> B[Welcome Screen]
+    A[Open QuizMaster] --> B[Welcome Screen]
     B -->|Start Quiz| C[Choose Category]
 
     C --> D[Choose Difficulty]
